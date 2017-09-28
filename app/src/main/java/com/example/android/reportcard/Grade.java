@@ -24,5 +24,11 @@ public class Grade {
         return mDefaultClass;
     }
 
-
+    @Override
+    public String toString() {
+        return "Grade{" +
+                "mDefaultGrade='" + mDefaultGrade + '\'' +
+                ", mDefaultClass='" + mDefaultClass + '\'' +
+                '}';
+    }
 }

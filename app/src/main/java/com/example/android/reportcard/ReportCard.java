@@ -2,6 +2,7 @@ package com.example.android.reportcard;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -30,7 +31,7 @@ public class ReportCard extends AppCompatActivity {
 
             listView.setAdapter(adapter);
 
-
+            Log.v("ReportActivity", "Current grade: " + grades);
         }
 
 }
