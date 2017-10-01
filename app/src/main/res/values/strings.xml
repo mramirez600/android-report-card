@@ -1,10 +1,10 @@
 <resources>
 
     <string name="app_name">Toronto Tour</string>
-    <string name="loma">CASA LOMA</string>
-    <string name="tower">CN TOWER</string>
-    <string name="hall">CITY HALL</string>
-    <string name="island">ISLANDS</string>
+    <string name="loma">HISTORICAL</string>
+    <string name="tower">MAIN</string>
+    <string name="hall">CUISINE</string>
+    <string name="island">FUN FUN</string>
     <string name="addressCN">Address:\n 301 Front St W, Toronto, ON M5V 2T6</string>
     <string name="loc1">CN TOWER</string>
     <string name="addressLoma">Address:\n 1 Austin Terrace, Toronto, ON M5R 1X8</string>
@@ -13,5 +13,10 @@
     <string name="loc3">NATHAN PHILLIPS CITY HALL</string>
     <string name="addressIsland">Address:\n 9 Queens Quay W, Toronto, ON M5H 2N2</string>
     <string name="loc4">TORONTO ISLAND"</string>
-
+    <string name="amusementPark">CANADA\'S WONDERLAND</string>
+    <string name="amuseParkAdd">Address:\n 1 Canada\'s Wonderland Drive, Vaughan, ON L6A 1S6</string>
+    <string name="restaurant1">CANOE RESTAURANT &amp; BAR</string>
+    <string name="rest1address">66 Wellington St. W | 54th Floor TD Bank Tower\nToronto, Ontario M5K 1H6</string>
+    <string name="restaurant2">360 THE RESTAURANT AT THE CN TOWER</string>
+    <string name="rest2address">301 Front St W, Toronto, Ontario M5V 2T6</string>
 </resources>

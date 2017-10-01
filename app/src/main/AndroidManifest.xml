@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LocationOne"
+            android:name=".MainAttractions"
             android:label="LOCATION ONE"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -25,7 +25,7 @@
                 android:value=".MainActivity"/>
         </activity>
         <activity
-            android:name=".LocationTwo"
+            android:name=".Historical"
             android:label="LOCATION TWO"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -34,7 +34,7 @@
                 android:value=".MainActivity"/>
         </activity>
         <activity
-            android:name=".LocationThree"
+            android:name=".Cuisine"
             android:label="LOCATION THREE"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -43,7 +43,7 @@
                 android:value=".MainActivity"/>
         </activity>
         <activity
-            android:name=".LocationFour"
+            android:name=".FunAttractions"
             android:label="LOCATION FOUR"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->

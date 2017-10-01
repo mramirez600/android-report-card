@@ -11,15 +11,13 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 /**
- * {@link Fragment} that displays a list of number vocabulary words.
+ * A simple {@link Fragment} subclass.
  */
-public class LocationOneFragment extends Fragment {
+public class HistoricalFragment extends Fragment {
 
 
 
-
-
-    public LocationOneFragment() {
+    public HistoricalFragment() {
         // Required empty public constructor
     }
 
@@ -30,13 +28,14 @@ public class LocationOneFragment extends Fragment {
 
 
         // Create a list of words
-        final ArrayList<Location> grades = new ArrayList<Location>();
-        grades.add(new Location(App.getContext().getResources().getString(R.string.addressCN), App.getContext().getResources().getString(R.string.loc1), R.drawable.tower));
+        final ArrayList<Location> locations = new ArrayList<Location>();
+        locations.add(new Location(App.getContext().getResources().getString(R.string.addressLoma), App.getContext().getResources().getString(R.string.loc2), R.drawable.casaloma));
+        locations.add(new Location(App.getContext().getResources().getString(R.string.addressHall), App.getContext().getResources().getString(R.string.loc3), R.drawable.cityhall));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-        LocationAdapter adapter = new LocationAdapter(getActivity(), grades);
+        LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the

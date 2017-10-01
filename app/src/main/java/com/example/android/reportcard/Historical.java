@@ -4,14 +4,15 @@ package com.example.android.reportcard;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class LocationOne extends AppCompatActivity {
+public class Historical extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, new LocationOneFragment())
+                .replace(R.id.container, new HistoricalFragment())
                 .commit();
     }
 }
+

@@ -13,11 +13,11 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class LocationTwoFragment extends Fragment {
+public class CuisineFragment extends Fragment {
 
 
 
-    public LocationTwoFragment() {
+    public CuisineFragment() {
         // Required empty public constructor
     }
 
@@ -28,13 +28,13 @@ public class LocationTwoFragment extends Fragment {
 
 
         // Create a list of words
-        final ArrayList<Location> grades = new ArrayList<Location>();
-        grades.add(new Location(App.getContext().getResources().getString(R.string.addressLoma), App.getContext().getResources().getString(R.string.loc2), R.drawable.casaloma));
-
+        final ArrayList<Location> locations = new ArrayList<Location>();
+        locations.add(new Location(App.getContext().getResources().getString(R.string.rest1address), App.getContext().getResources().getString(R.string.restaurant1)));
+        locations.add(new Location(App.getContext().getResources().getString(R.string.rest2address), App.getContext().getResources().getString(R.string.restaurant2)));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-        LocationAdapter adapter = new LocationAdapter(getActivity(), grades);
+        LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the

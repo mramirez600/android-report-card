@@ -30,13 +30,13 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new LocationOneFragment();
+            return new MainAttractionsFragment();
         } else if (position == 1) {
-            return new LocationTwoFragment();
+            return new HistoricalFragment();
         } else if (position == 2) {
-            return new LocationThreeFragment();
+            return new CuisineFragment();
         } else {
-            return new LocationFourFragment();
+            return new FunAttractionsFragment();
         }
     }
 
