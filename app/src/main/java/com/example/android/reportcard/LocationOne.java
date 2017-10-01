@@ -4,7 +4,7 @@ package com.example.android.reportcard;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ReportCard extends AppCompatActivity {
+public class LocationOne extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

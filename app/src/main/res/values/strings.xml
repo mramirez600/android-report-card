@@ -1,10 +1,19 @@
 <resources>
-    <string name="app_name">Report Card</string>
+    <string name="app_name">Toronto Tour</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="category_family">Family</string>
-    <string name="category_numbers">Numbers</string>
-    <string name="category_colors">Colors</string>
-    <string name="category_phrases">Phrases</string>
+    <string name="loma">CASA LOMA</string>
+    <string name="tower">CN TOWER</string>
+    <string name="hall">CITY HALL</string>
+    <string name="island">ISLANDS</string>
+    <string name="addressCN">Address:\n 301 Front St W, Toronto, ON M5V 2T6</string>
+    <string name="loc1">CN TOWER</string>
+    <string name="addressLoma">Address:\n 1 Austin Terrace, Toronto, ON M5R 1X8</string>
+    <string name="loc2">CASA LOMA</string>
+    <string name="addressHall">Address:\n 100 Queen St W, Toronto, ON M5H 2N2</string>
+    <string name="loc3">NATHAN PHILLIPS CITY HALL</string>
+    <string name="addressIsland">Address:\n 9 Queens Quay W, Toronto, ON M5H 2N2</string>
+    <string name="loc4">TORONTO ISLAND"</string>
+
 </resources>

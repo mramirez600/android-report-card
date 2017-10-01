@@ -14,9 +14,9 @@ import java.util.ArrayList;
  * Created by marvinramirez on 2017-09-25.
  */
 
-public class GradeAdapter extends ArrayAdapter<Grade> {
+public class LocationAdapter extends ArrayAdapter<Location> {
 
-    public GradeAdapter(Activity context, ArrayList<Grade> grades) {
+    public LocationAdapter(Activity context, ArrayList<Location> grades) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
         // the second argument is used when the ArrayAdapter is populating a single TextView.
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
@@ -34,26 +34,26 @@ public class GradeAdapter extends ArrayAdapter<Grade> {
         }
 
         // Get the {@link AndroidFlavor} object located at this position in the list
-        Grade currentGrade = getItem(position);
+        Location currentLocation = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView classTextView = (TextView) listItemView.findViewById(R.id.class_text_view);
         // Get the version name from the current AndroidFlavor object and
         // set this text on the name TextView
-        classTextView.setText(currentGrade.getDefaultClass());
+        classTextView.setText(currentLocation.getDefaultName());
 
         // Find the TextView in the list_item.xml layout with the ID version_number
         TextView gradeTextView = (TextView) listItemView.findViewById(R.id.grade_text_view);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
-        gradeTextView.setText(currentGrade.getDefaultGrade());
+        gradeTextView.setText(currentLocation.getDefaultAddress());
 
         // Find the ImageView in the list_item.xml layout with the ID image.
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
         // Check if an image is provided for this word or not
-        if (currentGrade.hasImage()) {
+        if (currentLocation.hasImage()) {
             // If an image is available, display the provided image based on the resource ID
-            imageView.setImageResource(currentGrade.getImageResourceId());
+            imageView.setImageResource(currentLocation.getImageResourceId());
             // Make sure the view is visible
             imageView.setVisibility(View.VISIBLE);
         } else {

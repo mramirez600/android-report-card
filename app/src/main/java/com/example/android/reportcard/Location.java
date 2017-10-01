@@ -5,11 +5,11 @@ package com.example.android.reportcard;
  */
 
 
-public class Grade {
+public class Location {
 
-    private String mDefaultGrade;
+    private String mDefaultAddress;
 
-    private String mDefaultClass;
+    private String mDefaultName;
 
     /** Image resource ID for the word */
     private int mImageResourceId = NO_IMAGE_PROVIDED;
@@ -18,24 +18,23 @@ public class Grade {
     private static final int NO_IMAGE_PROVIDED = -1;
 
 
-    public Grade(String defaultGrade, String defaultClass){
-        mDefaultGrade = defaultGrade;
-        mDefaultClass = defaultClass;
+    public Location(String defaultAddress, String defaultName){
+        mDefaultAddress = defaultAddress;
+        mDefaultName = defaultName;
     }
 
-    public Grade(String defaultGrade, String defaultClass, int imageResourceId,
-                int audioResourceId) {
-        mDefaultGrade = defaultGrade;
-        mDefaultClass = defaultClass;
+    public Location(String defaultAddress, String defaultName, int imageResourceId) {
+        mDefaultAddress = defaultAddress;
+        mDefaultName = defaultName;
         mImageResourceId = imageResourceId;
     }
 
-    public String getDefaultGrade () {
-        return mDefaultGrade;
+    public String getDefaultAddress() {
+        return mDefaultAddress;
     }
 
-    public String getDefaultClass () {
-        return mDefaultClass;
+    public String getDefaultName() {
+        return mDefaultName;
     }
 
     /**

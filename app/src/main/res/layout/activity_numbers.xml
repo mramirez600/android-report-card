@@ -8,5 +8,5 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:id="@+id/list1"
-        tools:context="com.example.android.reportcard.ReportCard"/>
+        tools:context="com.example.android.reportcard.LocationOne"/>
 

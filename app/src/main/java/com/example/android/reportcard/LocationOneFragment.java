@@ -1,8 +1,6 @@
 package com.example.android.reportcard;
 
 
-
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -32,15 +30,13 @@ public class LocationOneFragment extends Fragment {
 
 
         // Create a list of words
-        final ArrayList<Grade> grades = new ArrayList<Grade>();
-        grades.add(new Grade("AAAA", "Math"));
-        grades.add(new Grade("WOOHOO", "Science"));
-        grades.add(new Grade("B", "English"));
-        grades.add(new Grade("B-", "Art"));
+        final ArrayList<Location> grades = new ArrayList<Location>();
+        grades.add(new Location(App.getContext().getResources().getString(R.string.addressCN), App.getContext().getResources().getString(R.string.loc1), R.drawable.tower));
+
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-        GradeAdapter adapter = new GradeAdapter(getActivity(), grades);
+        LocationAdapter adapter = new LocationAdapter(getActivity(), grades);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
