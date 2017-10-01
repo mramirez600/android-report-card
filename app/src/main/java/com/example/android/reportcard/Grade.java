@@ -11,9 +11,23 @@ public class Grade {
 
     private String mDefaultClass;
 
+    /** Image resource ID for the word */
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
+
+    /** Constant value that represents no image was provided for this word */
+    private static final int NO_IMAGE_PROVIDED = -1;
+
+
     public Grade(String defaultGrade, String defaultClass){
         mDefaultGrade = defaultGrade;
         mDefaultClass = defaultClass;
+    }
+
+    public Grade(String defaultGrade, String defaultClass, int imageResourceId,
+                int audioResourceId) {
+        mDefaultGrade = defaultGrade;
+        mDefaultClass = defaultClass;
+        mImageResourceId = imageResourceId;
     }
 
     public String getDefaultGrade () {
@@ -24,11 +38,19 @@ public class Grade {
         return mDefaultClass;
     }
 
-    @Override
-    public String toString() {
-        return "Grade{" +
-                "mDefaultGrade='" + mDefaultGrade + '\'' +
-                ", mDefaultClass='" + mDefaultClass + '\'' +
-                '}';
+    /**
+     * Return the image resource ID of the word.
+     */
+    public int getImageResourceId() {
+        return mImageResourceId;
+    }
+
+    /**
+     * Returns whether or not there is an image for this word.
+     */
+    public boolean hasImage() {
+        return mImageResourceId != NO_IMAGE_PROVIDED;
+
+
     }
 }
