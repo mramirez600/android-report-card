@@ -1,8 +1,6 @@
 <resources>
-    <string name="app_name">Toronto Tour</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Toronto Tour</string>
     <string name="loma">CASA LOMA</string>
     <string name="tower">CN TOWER</string>
     <string name="hall">CITY HALL</string>
